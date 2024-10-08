@@ -8,8 +8,8 @@ class WyckoffOfertaDemandaAnaliseHorizontal(WyckoffOfertaDemanda):
         self.df_OHLC = df_OHLC.copy()
 
     def find_support_resistance(self, window=17):
-        self.df_OHLC['min'] = self.df_OHLC.iloc[argrelextrema(self.df_OHLC['Close'].values, np.less_equal, order=window)[0]]['Close']
-        self.df_OHLC['max'] = self.df_OHLC.iloc[argrelextrema(self.df_OHLC['Close'].values, np.greater_equal, order=window)[0]]['Close']
+        self.df_OHLC['min'] = self.df_OHLC.iloc[argrelextrema(self.df_OHLC['Low'].values, np.less_equal, order=window)[0]]['Low']
+        self.df_OHLC['max'] = self.df_OHLC.iloc[argrelextrema(self.df_OHLC['High'].values, np.greater_equal, order=window)[0]]['High']
         
         return self.df_OHLC
 
