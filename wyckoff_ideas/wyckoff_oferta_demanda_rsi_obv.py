@@ -1,6 +1,6 @@
-from wyckoff_oferta_demanda import WyckoffOfertaDemanda
-from indicador_obv import IndicadorOBV
-from indicador_rsi import IndicadorRSI
+from wyckoff_ideas.wyckoff_oferta_demanda import WyckoffOfertaDemanda
+from indicadores.indicador_obv import IndicadorOBV
+from indicadores.indicador_rsi import IndicadorRSI
 
 class WyckoffOfertaDemandaRSIOBV(WyckoffOfertaDemanda):
 

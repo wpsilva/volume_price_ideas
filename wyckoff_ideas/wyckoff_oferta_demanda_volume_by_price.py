@@ -1,6 +1,5 @@
 import pandas as pd
-import numpy as np
-from wyckoff_oferta_demanda import WyckoffOfertaDemanda
+from wyckoff_ideas.wyckoff_oferta_demanda import WyckoffOfertaDemanda
 
 class WyckoffOfertaDemandaVolumeByPrice(WyckoffOfertaDemanda):
     

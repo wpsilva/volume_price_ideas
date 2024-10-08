@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from scipy.signal import argrelextrema
-from wyckoff_oferta_demanda import WyckoffOfertaDemanda
+from wyckoff_ideas.wyckoff_oferta_demanda import WyckoffOfertaDemanda
 
 class WyckoffOfertaDemandaAnaliseHorizontal(WyckoffOfertaDemanda):
     def __init__(self, df_OHLC):

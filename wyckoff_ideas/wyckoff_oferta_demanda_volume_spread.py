@@ -1,5 +1,5 @@
 import pandas as pd
-from wyckoff_oferta_demanda import WyckoffOfertaDemanda
+from wyckoff_ideas.wyckoff_oferta_demanda import WyckoffOfertaDemanda
 
 class WyckoffOfertaDemandaVolumeSpread(WyckoffOfertaDemanda):
     def __init__(self, df_OHLC):

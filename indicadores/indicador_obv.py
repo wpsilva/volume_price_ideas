@@ -1,5 +1,5 @@
 import pandas as pd
-from indicador import Indicador
+from indicadores.indicador import Indicador
 
 class IndicadorOBV(Indicador):
     def __init__(self, df_OHLC, periodo=14):
