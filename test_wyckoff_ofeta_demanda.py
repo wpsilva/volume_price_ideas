@@ -6,6 +6,7 @@ from wyckoff_ideas.wyckoff_oferta_demanda_analise_horizontal import WyckoffOfert
 from wyckoff_ideas.wyckoff_oferta_demanda_volume_by_price import WyckoffOfertaDemandaVolumeByPrice
 from wyckoff_ideas.wyckoff_oferta_demanda_bb import WyckoffOfertaDemandaBB
 from wyckoff_ideas.wyckoff_oferta_demanda_fibo_retracement import WyckoffOfertaDemandaFiboRetracement
+from wyckoff_ideas.wyckoff_oferta_demanda_pivot_preco import WyckoffOfertaDemandaPivotPreco
 
 df_OHLC = yf.download("BPAC11.SA", start='2022-01-01')
 #df_OHLC = yf.download("PETR4.SA", start='2022-01-01')
@@ -17,6 +18,7 @@ wyckoff_oferta_demanda_analise_horizontal = WyckoffOfertaDemandaAnaliseHorizonta
 wyckoff_oferta_demanda_volume_by_price = WyckoffOfertaDemandaVolumeByPrice(df_OHLC)
 wyckoff_oferta_demanda_bb = WyckoffOfertaDemandaBB(df_OHLC)
 wyckoff_oferta_demanda_fibo_retracement = WyckoffOfertaDemandaFiboRetracement(df_OHLC)
+wyckoff_oferta_demanda_pivot_preco = WyckoffOfertaDemandaPivotPreco(df_OHLC)
 
 def test(wyckoff_oferta_demanda):
     df_OHLC_with_signals = wyckoff_oferta_demanda.generate_signals()
@@ -28,4 +30,5 @@ def test(wyckoff_oferta_demanda):
 #test(wyckoff_oferta_demanda_analise_horizontal)
 #test(wyckoff_oferta_demanda_volume_by_price)
 #test(wyckoff_oferta_demanda_bb)
-test(wyckoff_oferta_demanda_fibo_retracement)
+#test(wyckoff_oferta_demanda_fibo_retracement)
+test(wyckoff_oferta_demanda_pivot_preco)
