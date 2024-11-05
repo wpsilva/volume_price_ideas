@@ -1,4 +1,3 @@
-import pandas as pd
 import numpy as np
 from scipy.signal import argrelextrema
 from wyckoff_ideas.wyckoff_oferta_demanda import WyckoffOfertaDemanda
