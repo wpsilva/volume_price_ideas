@@ -1,11 +1,10 @@
 from indicadores.indicador import Indicador
 from scipy.signal import argrelextrema
 import numpy as np
-import pandas as pd
 
 class IndicadorTopoFundo(Indicador):
     def __init__(self, df_OHLC, periodo=17):
-        self.df_OHLC = df_OHLC.copy()
+        self.df_OHLC = df_OHLC
         self.periodo = periodo
 
     def find_support_resistance(self, window=17):
